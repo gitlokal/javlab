@@ -9,6 +9,9 @@ package przegladaniegrafu;
  *
  * @author lokal
  */
-public class PrzegladanieGrafu {
+public abstract class PrzegladanieGrafu {
+    
+    abstract void wstaw(int v);
+    abstract int pobierz();
     
 }
