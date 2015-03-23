@@ -10,12 +10,33 @@
  */
 
 public class Main {
-    int[][] graph = new int[][]{ {0, 1, 1, 0, 1, 0},
-                                 {1, 0, 1, 1, 0, 1},
-                                 {1, 1, 0, 1, 1, 0},
-                                 {0, 1, 1, 0, 0, 0},
-                                 {1, 0, 1, 0, 0, 0},
-                                 {0, 1, 0, 0, 0, 0} 
-    }   ;
+    
+    public static void main(String[] args){
+            
+        
+        int[][] macierz = new int[][]{ {0, 1, 1, 0, 1, 0},
+                                     {1, 0, 1, 1, 0, 1},
+                                     {1, 1, 0, 1, 1, 0},
+                                     {0, 1, 1, 0, 0, 0},
+                                     {1, 0, 1, 0, 0, 0},
+                                     {0, 1, 0, 0, 0, 0} 
+                                    };
+        
+        int[][] macierz2 = new int[][]{ {0, 0, 0, 0, 0, 1},
+                                     {0, 0, 0, 0, 1, 0},
+                                     {0, 0, 0, 0, 0, 1},
+                                     {0, 0, 0, 0, 1, 1},
+                                     {0, 1, 0, 1, 0, 0},
+                                     {1, 0, 1, 1, 0, 0} 
+                                    };
+        
+       Graf graf = new Graf(macierz2);
+//     System.out.println(graf.getEdgeSize());
+//     graf.show();
+       graf.showLL();
+//       System.out.println(graf.getSize());
+       DFS dfs = new DFS( graf);
+       dfs.pobierz(3);
+    }
     
 }

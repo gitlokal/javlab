@@ -64,9 +64,10 @@ public class Graf {
        
    
    
-    public void getAdjList(){
-        
+    public LinkedList<LinkedList<Integer>> getAdjList(){
+                return adjLists;
     }
+    
     public int getSize(){
         return size;
     }
