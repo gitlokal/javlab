@@ -16,7 +16,7 @@ import java.util.ListIterator;
 public class DFS extends PrzegladanieGrafu {
     private static Graf graph;
     private boolean[] visited ; 
-    LinkedList<LinkedList<Integer>> adjLists = new LinkedList<LinkedList<Integer>>();
+    private LinkedList<LinkedList<Integer>> adjLists = new LinkedList<LinkedList<Integer>>();
     public static LinkedList listaV = new LinkedList();
    
     public DFS( Graf graph){
